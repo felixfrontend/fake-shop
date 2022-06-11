@@ -1,0 +1,41 @@
+iframe {
+  display: block;
+}
+.product-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-page__content {
+  width: 70%;
+}
+
+.product-page__title {
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product-page__left {
+}
+
+.product-page__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 30%;
+}
+
+.product-page__img {
+  width: 200px;
+}
+
+.product-page__img img {
+  max-width: 100%;
+}
+
+.product-page__desc {
+  padding: 20px 0;
+}

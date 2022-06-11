@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Skeleton from "../components/Skeleton";
-import ShopItem from "../components/ShopItem";
+import Skeleton from "../../components/Skeleton";
+import ShopItem from "../../components/ShopItem";
 import { useDispatch, useSelector } from "react-redux";
-import { productsFetched, productsFetching } from "../redux/product/reducer";
+import { productsFetched, productsFetching } from "../../redux/product/reducer";
 
 import "./home-page.css";
 

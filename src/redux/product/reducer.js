@@ -5,6 +5,7 @@ const productSlice = createSlice({
 	initialState: {
 		productItems: [],
 		productsLoadingStatus: 'idle',
+		currentProduct: null,
 	},
 	reducers: {
 		productsFetching: (state) => {
@@ -13,10 +14,13 @@ const productSlice = createSlice({
 		productsFetched: (state, action) => {
 			state.productsLoadingStatus = 'idle';
 			state.productItems = action.payload
+		},
+		setCurrentProduct: (state, action) => {
+			state.currentProduct = action.payload
 		}
 	}
 })
 
-export const { productsFetching, productsFetched } = productSlice.actions
+export const { productsFetching, productsFetched, setCurrentProduct } = productSlice.actions
 
 export default productSlice.reducer
